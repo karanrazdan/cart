@@ -5,7 +5,6 @@ class CreateCartItems < ActiveRecord::Migration
       t.float :price
       t.text :description
       t.string :imdb_id
-      t.string :poster_url
 
       t.timestamps null: false
     end

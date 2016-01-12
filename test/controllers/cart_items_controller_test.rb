@@ -18,7 +18,7 @@ class CartItemsControllerTest < ActionController::TestCase
 
   test "should create cart_item" do
     assert_difference('CartItem.count') do
-      post :create, cart_item: { description: @cart_item.description, imdb_id: @cart_item.imdb_id, poster_url: @cart_item.poster_url, price: @cart_item.price, title: @cart_item.title }
+      post :create, cart_item: { description: @cart_item.description, imdb_id: @cart_item.imdb_id, price: @cart_item.price, title: @cart_item.title }
     end
 
     assert_redirected_to cart_item_path(assigns(:cart_item))
@@ -35,7 +35,7 @@ class CartItemsControllerTest < ActionController::TestCase
   end
 
   test "should update cart_item" do
-    patch :update, id: @cart_item, cart_item: { description: @cart_item.description, imdb_id: @cart_item.imdb_id, poster_url: @cart_item.poster_url, price: @cart_item.price, title: @cart_item.title }
+    patch :update, id: @cart_item, cart_item: { description: @cart_item.description, imdb_id: @cart_item.imdb_id, price: @cart_item.price, title: @cart_item.title }
     assert_redirected_to cart_item_path(assigns(:cart_item))
   end
 
